@@ -411,7 +411,11 @@ footer {
   .footer {
     flex-direction: column;
   }
-  .footer {
+  .about{
+    padding: 0px 20px;
+  }
+
+  .footer, .about h1 {
     text-align: center;
   }
   .footer ul {
