@@ -1,17 +1,36 @@
-let firstName = "John";
-let lastName = "Doe";
+const form = document.getElementById('form');
+const submitBtn = form.querySelector('button[type="submit"]');
 
-console.log(`Hello, ${firstName} ${lastName}!`);
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-let age = 30;
+    const formData = new FormData(form);
+    formData.append("access_key", "63996bc4-6c99-4ce1-a3dd-ea40e3d51a0f");
 
-age = 25;
+    const originalText = submitBtn.textContent;
 
-const birthYear = 1999;
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
 
-// birthYear = 2000; // This will cause an error
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
 
-console.log(`You are ${age} years old.`);
-console.log(`You were born in ${birthYear}.`);
+        const data = await response.json();
 
-console.log((3 + 2) - 76 * (1 + 1));
+        if (response.ok) {
+            alert("Merci! Votre message a bien été envoyé.");
+            form.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
