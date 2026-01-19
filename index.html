@@ -24,22 +24,22 @@
         />
       </div>
       <nav>
-        <a href="#" class="nav-link">Acceuil</a>
-        <a href="#" class="nav-link">Services</a>
-        <a href="#" class="nav-link">À Propos de nous</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#Acceuil" class="nav-link">Acceuil</a>
+        <a href="#Services" class="nav-link">Services</a>
+        <a href="#Propos" class="nav-link">À Propos de nous</a>
+        <a href="#Contact" class="nav-link">Contact</a>
       </nav>
     </header>
     <div class="main-content">
-      <div class="home">
+      <div class="home" id="Acceuil">
         <div>
           <h1><span>Externalisez</span> vos opérations en toute confiance</h1>
           <p>
             AOM accompagne les entreprises dans l’externalisation de leurs tâches administratives, documentaires et de support, avec un haut niveau d’exigence en matière de qualité et de fiabilité.
           </p>
-          <p>Devis & Tests gratuits • Sans engagement • Fournis sous 48h</p>
-          <button type="button">Nos Services</button>
-          <button type="button" id="btn-wht">Nous contacter</button>
+          <p> <strong>Devis & Tests gratuits • Sans engagement • Fournis sous 48h</strong></p>
+          <a href="#Services"><button type="button">Nos Services</button></a>
+          <a href="#Contact"><button type="button" id="btn-wht" >Nous contacter</button></a>
         </div>
         <div>
           <img
@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <div class="services">
+      <div class="services" id="Services">
         <div>
           <h1 class="centered-info">Nos services</h1>
           <p class="centered-info">
@@ -65,14 +65,14 @@
             <p>AOM accompagne les entreprises dans le traitement fiable et structuré de leurs données, avec une exigence élevée de précision et de contrôle qualité.</p>
             <p>Nos prestations couvrent :</p>
             <ul>
-              <li>La saisie de données</li>
-              <li>Le traitement de documents</li>
-              <li>L'OCR avec relecture humaine</li>
-              <li>La structuration de documents complexes</li>
-              <li>La création et l'enrichissement de bases de données</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">La saisie de données</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Le traitement de documents</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">L'OCR avec relecture humaine</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">La structuration de documents complexes</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">La création et l'enrichissement de bases de données</li>
             </ul>  
             <p>
-              Objectif : des données exploitables, cohérentes et sécurisées.
+              <strong>Objectif :</strong> des données exploitables, cohérentes et sécurisées.
             </p>
           </div>
           <div class="service-content">
@@ -82,14 +82,14 @@
             </p>
             <p>Nos prestations incluent :</p>
             <ul>
-              <li>Mise en page de livres, romans et documents longs</li>
-              <li>Conception de magazines et supports éditoriaux</li>
-              <li>Mise en page de catalogues commerciaux</li>
-              <li>Adaptation de contenus au format ePub</li>
-              <li>Harmonisation graphique et respect de la charte visuelle</li>
-              <li>Création de couvertures</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Mise en page de livres, romans et documents longs</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Conception de magazines et supports éditoriaux</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Mise en page de catalogues commerciaux</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Adaptation de contenus au format ePub</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Harmonisation graphique et respect de la charte visuelle</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Création de couvertures</li>
             </ul>
-
+            <p>Objectif : <strong>des documents lisibles, structurés et valorisés.</strong></p>
           </div>
           <div class="service-content">
             <h2> Traitement & Optimisation d’Images</h2>
@@ -98,12 +98,12 @@
             </p>
             <p>Nous intervenons notamment sur :</p>
             <ul>
-              <li>•	Détourage et nettoyage d’images</li>
-              <li>•	Recadrage et redressement</li>
-              <li>•	Optimisation visuelle pour supports imprimés ou numériques</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">	Détourage et nettoyage d’images</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">	Recadrage et redressement</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">	Optimisation visuelle pour supports imprimés ou numériques</li>
             </ul> 
             <p>
-              Objectif : des visuels nets, cohérents et prêts à l’usage.
+              Objectif : <strong>des visuels nets, cohérents et prêts à l’usage.</strong>
             </p> 
             
           </div>
@@ -114,14 +114,16 @@
             </p>
             <p>Nos interventions portent sur :</p>
             <ul>
-              <li>Rédaction, révision et classement de documents juridiques</li>
-              <li>Gestion électronique de documents</li>
-              <li>Préparation et organisation de dossiers</li>
-              <li>Assistance à la préparation de présentations et supports juridiques</li>
-              <li>Gestion des agendas, rendez-vous et communications</li>
-              <li>Recherche juridique documentaire</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Rédaction, révision et classement de documents juridiques</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Gestion électronique de documents</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Préparation et organisation de dossiers</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Assistance à la préparation de présentations et supports juridiques</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Gestion des agendas, rendez-vous et communications</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Recherche juridique documentaire</li>
             </ul>
-            <p>Objectif : sécuriser et fluidifier vos opérations administratives et juridiques.</p>
+            <p>
+              Objectif : <strong>sécuriser et fluidifier vos opérations administratives et juridiques.</strong>
+            </p>
           </div>
           <div class="service-content">
             <h2> Gestion de la Relation Client (CRM)</h2>
@@ -130,12 +132,14 @@
             </p>
             <p>Nos prestations incluent :</p>
             <ul>
-              <li>Collecte et structuration des données clients</li>
-              <li>Suivi et traçabilité des interactions</li>
-              <li>Gestion des demandes, retours et réclamations</li>
-              <li>Mise en place d’actions de fidélisation</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Collecte et structuration des données clients</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Suivi et traçabilité des interactions</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Gestion des demandes, retours et réclamations</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Mise en place d’actions de fidélisation</li>
             </ul>
-            <p>Objectif : une relation client organisée, suivie et durable.</p>
+            <p>
+              Objectif : <strong>une relation client organisée, suivie et durable.</strong>
+            </p>
           </div>
           <div class="service-content">
             <h2>Collecte & Classement d’Informations</h2>
@@ -144,15 +148,17 @@
             </p>
             <p>Nous intervenons sur :</p>
             <ul>
-              <li>Collecte de données à partir de supports physiques</li>
-              <li>Intégration de données issues de supports numériques</li>
-              <li>Classement et structuration pour exploitation ultérieure</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Collecte de données à partir de supports physiques</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Intégration de données issues de supports numériques</li>
+              <li><img src="./images/check_green.svg" height="20px" width="20px" style="margin-top: 5px;">Classement et structuration pour exploitation ultérieure</li>
             </ul>
-            <p>Objectif : transformer l’information brute en ressources structurées.</p>
+            <p>
+              Objectif : <strong>transformer l’information brute en ressources structurées.</strong>
+            </p>
           </div>
         </div>
       </div>
-      <div class="about">
+      <div class="about" id="Propos">
         <div>
           <img
             src="./images/table_bureau.jpg"
@@ -186,7 +192,7 @@
           </p>
         </div>
       </div>
-      <div class="contact">
+      <div class="contact" id="Contact">
         <h1 class="centered-info">Contactez-Nous</h1>
         <p class="centered-info">
           Une question, un besoin ou un projet ? Contactez-nous dès maintenant et notre équipe vous répondra dans les plus brefs délais.
@@ -262,10 +268,10 @@
         <div>
           <h2 class="light-white">Liens rapides</h2>
           <ul>
-            <li><a href="#" class="white">Acceuil</a></li>
-            <li><a href="#" class="white">Services</a></li>
-            <li><a href="#" class="white">À propos de nous</a></li>
-            <li><a href="#" class="white">Contact</a></li>
+            <li><a href="#Acceuil" class="white">Acceuil</a></li>
+            <li><a href="#Services" class="white">Services</a></li>
+            <li><a href="#Propos" class="white">À propos de nous</a></li>
+            <li><a href="#Contact" class="white">Contact</a></li>
           </ul>
         </div>
         <div>
