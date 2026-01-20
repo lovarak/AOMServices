@@ -1,0 +1,11 @@
+## init install
+npm init -y
+npm install express nodemailer cors dotenv
+
+## dev
+npm run dev
+
+## production
+# node
+npm start
+
