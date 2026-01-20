@@ -1,7 +1,7 @@
-import express from "express";
-import nodemailer from "nodemailer";
 import cors from "cors";
 import dotenv from "dotenv";
+import express from "express";
+import nodemailer from "nodemailer";
 
 dotenv.config();
 
@@ -14,14 +14,13 @@ app.use(express.json());
 const transporter = nodemailer.createTransport({
   host: process.env.MAIL_HOST,
   port: process.env.MAIL_PORT,
-  secure: true, // SSL = true pour 465  // STARTTLS = false pour 587
+  secure: false, // SSL = true pour 465 (ovh)  // STARTTLS = false pour 587 (simafri)
   auth: {
     user: process.env.MAIL_USER,
     pass: process.env.MAIL_PASS,
   },
   tls: {
-    rejectUnauthorized: false // souvent nécessaire OVH
-    // ciphers: 'SSLv3' // STARTTLS
+    rejectUnauthorized: false // souvent nécessaire OVH | Simafri
   },
 });
 
